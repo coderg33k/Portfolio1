@@ -21,7 +21,7 @@
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
-
+		float: right;
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
@@ -47,14 +47,6 @@
 			a {
 				width: 200px;
 			}
-
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
-			}
 		}
 
 		li:hover > ul,
@@ -65,21 +57,22 @@
 
 	li {
 		position: relative;
-
-		&:hover > a,
-		&.focus > a {
-		}
 	}
 
 	a {
 		display: block;
 		text-decoration: none;
-	}
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a,
-	.current-menu-ancestor > a {
+		display: inline-block;
+        color: #000;
+        font-weight: bolder;
+        text-transform: uppercase;
+        margin: 20px 20px;
+		&:hover{
+			color: darkmagenta;
+		}
+		&:active{
+			color:cornflowerblue;
+		}
 	}
 }
 
