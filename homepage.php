@@ -25,6 +25,3 @@ get_template_part('template-parts/profile-bio');
 
 <?php get_footer(); ?>
 
-<?php
-get_template_part('template-parts/name-of-template-parts-file-here');
-?>

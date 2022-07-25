@@ -7,7 +7,7 @@
    */
 ?>
 
-        <div class="row">
+        <div class="card-row">
           <div class="card">
             <img src="<?php the_field('profile_bio_technology'); ?>" alt="Technology" style="width:100%">
             <div class="card-text">
