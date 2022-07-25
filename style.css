@@ -622,7 +622,7 @@ textarea {
 .site-header {
   height: 60px;
   width: 100%;
-  background-color: #eedbff;
+  background-color: gray;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -643,6 +643,7 @@ textarea {
   list-style: none;
   margin: 0;
   padding-left: 0;
+  float: right;
 }
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -673,7 +674,19 @@ textarea {
 .main-navigation a {
   display: block;
   text-decoration: none;
+  display: inline-block;
+  color: #000;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin: 20px 20px;
 }
+.main-navigation a:hover {
+  color: darkmagenta;
+}
+.main-navigation a:active {
+  color: cornflowerblue;
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -711,6 +724,22 @@ textarea {
   flex: 1 0 50%;
 }
 
+.site-footer {
+  height: 8vh;
+  width: 100%;
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.site-footer > a {
+  text-decoration: none;
+  color: black;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
@@ -719,7 +748,7 @@ textarea {
 
 .post,
 .page {
-  margin: 0 0 1.5em;
+  /*	margin: 0 0 1.5em; */
 }
 
 .updated:not(.published) {
@@ -735,6 +764,57 @@ textarea {
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
+}
+
+.homepage {
+  height: 100%;
+  width: 100%;
+  /* background-color: lime; */
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+  text-shadow: 0 0 3px black;
+  padding-top: 10px;
+}
+
+.profilepic {
+  height: 300px;
+  width: 300px;
+}
+
+.profiletext {
+  height: 300px;
+  width: 300px;
+  text-align: center;
+}
+
+.row {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 10px 0;
+}
+
+.card {
+  width: 30vw;
+  min-width: 400px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.card > img {
+  height: 300px;
+}
+.card .card-text {
+  height: 300px;
+  padding: 10px;
 }
 
 /* Comments

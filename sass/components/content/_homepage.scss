@@ -1,0 +1,48 @@
+.homepage{
+    height: 100%;
+    width: 100%;
+    /* background-color: lime; */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    text-shadow: 0 0 3px black;
+    padding-top: 10px;
+}
+.profilepic{
+    height: 300px;
+    width: 300px;
+    // background-color: black;
+}
+.profiletext{
+    height: 300px;
+    width: 300px;
+    // background-color: white;
+    text-align: center;
+}
+.row{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 10px 0; 
+}
+.card{
+    width: 30vw;
+    min-width: 400px;
+    height: 100%;
+    background: rgba($color: #000000, $alpha: 0.5);
+    & > img{
+        height: 300px;
+    }
+    .card-text{
+        height: 300px;
+        padding: 10px;
+    }
+}
